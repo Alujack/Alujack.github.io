@@ -28,5 +28,26 @@ window.onscroll = () =>{
         header.classList.toggle('sticky' ,window.scrollY > 100);
     Menu_icon.classList.remove('bx-x');
     navbar.classList.remove('active');
-}
+};
 
+
+ScrollReveal({ 
+    reset: true ,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-image, .service-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .image-about', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+
+
+const type = new Typed(".multyTyping" ,{
+strings: ['Frontend Developer', 'FullStack developer', 'Software Engineer', 'Cyber Security', 'IT Support'],
+typeSpeed:100,
+backSpeed:100,
+backDelay:1000,
+loop: true
+});
