@@ -112,6 +112,11 @@ span{
  width: 40vw;
  animation: floatImage 4s ease-in-out infinite;
 }
+.home-image img {
+    max-width: 100%;
+    width: 70vw;
+    object-fit: contain;
+}
 @keyframes floatImage {
     0%{
         transform: translateY(0);
@@ -402,8 +407,14 @@ span{
     width:70vw;
     margin-top: 4rem 
   }
+
+  .home-image img {
+        width: 70vw;
+        height: auto;
+    }
 }
 .icon1{
     font-size: 2.4rem;
     color:white;
+
 }
