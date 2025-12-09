@@ -409,12 +409,29 @@ span{
   }
 
   .home-image img {
-        width: 70vw;
+        width: 80vw;
         height: auto;
-    }
+ }
+ .home{
+    flex-direction: column;
+    min-height: auto; /* FIX huge blank space */
+    padding-top: 12rem; /* push down below header */
+  }
+
+  .home-image{
+    width: 100%; /* FIX small image */
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  section{
+    min-height: auto;
+  }
 }
 .icon1{
     font-size: 2.4rem;
     color:white;
 
 }
+
